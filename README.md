@@ -45,11 +45,13 @@ Questions and commands
 
 Positive & negative forms
 
+
 💬 Daily Usage
 
 Greetings and polite requests
 
 Informal speech and common expressions
+
 
 🔤 Word & Grammar Patterns
 
@@ -59,11 +61,13 @@ Tense variations (past/present/future)
 
 Singular/plural and pronoun use
 
+
 🌐 Mixed Language
 
 English technical terms inside Singlish
 
 Place names and abbreviations
+
 
 ✏ Formatting & Symbols
 
@@ -73,11 +77,13 @@ Dates, times, currency
 
 Extra spaces and line breaks
 
+
 😎 Informal & Slang
 
 Casual speech patterns
 
 Colloquial Singlish variations
+
 
 🚀 Getting Started
 🔧 Prerequisites
@@ -93,16 +99,20 @@ Check versions:
 node -v
 npm -v
 ```
+
+
 📥 Installation Guide
 1️⃣ Clone the Repository
 ```
 git clone <your-repository-url>
 cd assignment-1
 ```
+
 2️⃣ Install Dependencies
 ```
 npm install
 ```
+
 3️⃣ Install Playwright Browsers
 ```
 npx playwright install
@@ -115,6 +125,7 @@ You’re now ready to run the automated tests 🎉
 ```
 npx playwright test
 ```
+
 🔍 Run Specific Test Types
 ```
 # Only Positive Functional Tests
@@ -129,6 +140,7 @@ npx playwright test --grep "Pos_Fun_0001"
 # Pattern-based execution
 npx playwright test --grep "000[1-5]"
 ```
+
 🖥 Run Tests with Browser Options
 # Interactive UI mode
 ```
@@ -145,17 +157,23 @@ npx playwright test --project=chromium
 npx playwright test --project=firefox
 npx playwright test --project=webkit
 ```
+
+
 📊 Test Reports & Results
+
 📁 Where Results Are Stored
 Item	Location
 HTML Report	```playwright-report/```
 Screenshots	```test-results/```
 Console Logs Terminal Output
+
+
 📈 Generate HTML Report
 ```
 npx playwright test --reporter=html
 npx playwright show-report
 ```
+
 ⚙️ Framework Features
 
 ✨ Smart output comparison (handles minor variations)
@@ -163,6 +181,7 @@ npx playwright show-report
 🧾 Detailed console logging
 🔁 Retry logic for unstable tests
 🌐 Multi-browser testing support
+
 
 🧩 Test Design Structure
 
@@ -177,6 +196,8 @@ test('Test_ID - Test Name', async ({ page }) => {
   // 6. Log results
 });
 ```
+
+
 🐛 Troubleshooting
 ❗ Input Field Not Found
 
@@ -184,6 +205,7 @@ Run:
 ```
 npx playwright test --grep "Debug"
 ```
+
 
 Then update selectors in the helper function.
 
@@ -201,6 +223,7 @@ npx playwright install --force
 ```
 npx tsc --noEmit
 ```
+
 📚 References
 
 Playwright Documentation
