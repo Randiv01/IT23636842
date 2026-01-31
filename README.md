@@ -16,6 +16,7 @@ The system under test:
 🔗 Swift Translator – Singlish to Sinhala Translator
 
 📁 Project Structure
+```
 assignment-1/
 ├── tests/
 │   └── test.spec.ts          # All automated test cases
@@ -26,11 +27,11 @@ assignment-1/
 ├── test-results/             # Screenshots & execution artifacts
 ├── playwright-report/        # HTML test reports
 └── Book1.xlsx                # Original test case documentation
-
+```
 ✨ Test Suite Overview
 Category	Count	Description
 ✅ Positive Functional Tests	34	Valid Singlish inputs that should translate correctly
-❌ Negative Functional Tests	11	Invalid, unclear, or problematic inputs
+❌ Negative Functional Tests	14	Invalid, unclear, or problematic inputs
 🖥 UI Test Case	1	Verifies UI-related behavior
 🐞 Debug Test	1	Helps inspect website structure
 🧠 What Is Being Tested?
@@ -86,29 +87,34 @@ Node.js (v16 or higher)
 npm (comes with Node.js)
 
 Check versions:
-
+```
 node -v
 npm -v
-
+```
 📥 Installation Guide
 1️⃣ Clone the Repository
+```
 git clone <your-repository-url>
 cd assignment-1
-
+```
 2️⃣ Install Dependencies
+```
 npm install
-
+```
 3️⃣ Install Playwright Browsers
+```
 npx playwright install
-
+```
 
 You’re now ready to run the automated tests 🎉
 
 🧪 Running the Tests
 ▶ Run All Tests
+```
 npx playwright test
-
+```
 🔍 Run Specific Test Types
+```
 # Only Positive Functional Tests
 npx playwright test --grep "Pos_Fun"
 
@@ -120,9 +126,10 @@ npx playwright test --grep "Pos_Fun_0001"
 
 # Pattern-based execution
 npx playwright test --grep "000[1-5]"
-
+```
 🖥 Run Tests with Browser Options
 # Interactive UI mode
+```
 npx playwright test --ui
 
 # Run with visible browser
@@ -135,17 +142,18 @@ npx playwright test --debug
 npx playwright test --project=chromium
 npx playwright test --project=firefox
 npx playwright test --project=webkit
-
+```
 📊 Test Reports & Results
 📁 Where Results Are Stored
 Item	Location
-HTML Report	playwright-report/
-Screenshots	test-results/
-Console Logs	Terminal Output
+HTML Report	```playwright-report/```
+Screenshots	```test-results/```
+Console Logs Terminal Output
 📈 Generate HTML Report
+```
 npx playwright test --reporter=html
 npx playwright show-report
-
+```
 ⚙️ Framework Features
 
 ✨ Smart output comparison (handles minor variations)
@@ -157,7 +165,7 @@ npx playwright show-report
 🧩 Test Design Structure
 
 Each test follows this flow:
-
+```
 test('Test_ID - Test Name', async ({ page }) => {
   // 1. Load test data
   // 2. Navigate to translation website
@@ -166,41 +174,31 @@ test('Test_ID - Test Name', async ({ page }) => {
   // 5. Compare with expected Sinhala output
   // 6. Log results
 });
-
+```
 🐛 Troubleshooting
 ❗ Input Field Not Found
 
 Run:
-
+```
 npx playwright test --grep "Debug"
-
+```
 
 Then update selectors in the helper function.
 
 ⏳ Timing Issues
 
 Add waits inside the test:
-
+```
 await page.waitForTimeout(2000);
-
+```
 🌐 Browser Problems
+```
 npx playwright install --force
-
+```
 🔎 TypeScript Errors
+```
 npx tsc --noEmit
-
-🏗 Extending the Project
-
-You can enhance this framework by:
-
-Adding data-driven tests from Excel/JSON
-
-Running tests in parallel
-
-Adding performance testing
-
-Including accessibility testing
-
+```
 📚 References
 
 Playwright Documentation
