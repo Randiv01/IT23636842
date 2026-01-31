@@ -31,11 +31,14 @@ assignment-1/
 
 
 ✨ Test Suite Overview
+
 Category	Count	Description
+
 ✅ Positive Functional Tests	34	Valid Singlish inputs that should translate correctly
 ❌ Negative Functional Tests	14	Invalid, unclear, or problematic inputs
 🖥 UI Test Case	1	Verifies UI-related behavior
 🐞 Debug Test	1	Helps inspect website structure
+
 🧠 What Is Being Tested?
 🗣 Language Coverage
 
