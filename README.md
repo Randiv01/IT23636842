@@ -28,6 +28,8 @@ assignment-1/
 ├── playwright-report/        # HTML test reports
 └── Book1.xlsx                # Original test case documentation
 ```
+
+
 ✨ Test Suite Overview
 Category	Count	Description
 ✅ Positive Functional Tests	34	Valid Singlish inputs that should translate correctly
