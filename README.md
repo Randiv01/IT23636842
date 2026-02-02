@@ -1,7 +1,7 @@
 # IT23636842
 🧪 IT3040 – ITPM Assignment 1
 
-Student ID: IT23684676
+Student ID: IT23636842
 
 This project focuses on testing and automating a Singlish-to-Sinhala translation system using Playwright. The goal is to evaluate the system’s accuracy, robustness, and UI behavior across a wide variety of real-world language scenarios.
 
