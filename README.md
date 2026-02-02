@@ -226,13 +226,3 @@ npx playwright install --force
 ```
 npx tsc --noEmit
 ```
-
-📚 References
-
-Playwright Documentation
-
-Playwright Test API
-
-Assignment PDF
-
-Provided Excel Test Case File
